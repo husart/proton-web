@@ -31,10 +31,14 @@ const Topics = (props) => {
         onClick(topic.topicId);
       }}
     >
+      <img src={topic.logo}></img>
       <h3>{topic.topicTitle}</h3>
       <p>{topic.text}</p>
     </div>
   ));
-  return <div>{content}</div>;
+  return <div className="card">
+    
+    {content}
+    </div>;
 };
 export default withRouter(Topics);

@@ -1,16 +1,55 @@
-@import '../styles/variables.scss';
+@import "../styles/variables.scss";
 
 .lessonCard {
   text-align: center;
   background-color: $primary-color;
   color: $secondary-color;
   height: 12em;
-
 }
 .bullets {
-
-  background-color: red;
+font-size: 1.5em;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
   .hasView {
-    background-color: blue;
+    background-color: green;
+  }
+  .current {
+    border: 3px solid grey;
+  }
+  li {
+    text-decoration: none;
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin:5px;
+    border: 1px solid grey;
+  }
+}
+
+.arrows {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  img {
+    position: absolute;
+    height: 140px;
+    top: 43%;
+    cursor: pointer;
+     
+   
+  }
+  .preview {
+    left: 0;
+  }
+  .next {
+    right: 0;
+  }
+  .disabled {
+    cursor: default;
+    opacity: 0.5;
   }
 }
