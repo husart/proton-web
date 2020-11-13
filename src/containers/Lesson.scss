@@ -1,0 +1,9 @@
+@import '../styles/variables.scss';
+
+.lessonCard {
+  text-align: center;
+  background-color: $primary-color;
+  color: $secondary-color;
+  height: 12em;
+
+}

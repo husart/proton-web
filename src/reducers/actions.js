@@ -1,0 +1,7 @@
+export const GET_LESSON = 'GET_LESSON';
+export const GET_ALL_LESSONS = 'GET_ALL_LESSONS';
+export const NEXT_PAGE_LESSON = 'NEXT_PAGE_LESSON';
+export const PREV_PAGE_LESSON = 'PREV_PAGE_LESSON';
+export const SELECT_TYPE = 'SELECT_TYPE';
+export const SELECT_TOPIC = 'SELECT_TOPIC';
+export const RESET_CONFIG = 'RESET_CONFIG';
