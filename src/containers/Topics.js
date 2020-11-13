@@ -4,6 +4,7 @@ import "./Topics.scss";
 import history from "../history";
 import { withRouter } from "react-router-dom";
 import getTopics from "../selectors/getTopics";
+
 import { SELECT_TOPIC } from "../reducers/actions";
 
 const Topics = (props) => {
@@ -12,10 +13,13 @@ const Topics = (props) => {
   const dispatch = useDispatch();
 
   const onClick = (topicId) => {
+    
     dispatch({
       type: SELECT_TOPIC,
       payload: topicId,
     });
+    
+    
     history.push(pathname + "/" + topicId);
   };
 

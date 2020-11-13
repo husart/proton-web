@@ -5,3 +5,4 @@ export const PREV_PAGE_LESSON = 'PREV_PAGE_LESSON';
 export const SELECT_TYPE = 'SELECT_TYPE';
 export const SELECT_TOPIC = 'SELECT_TOPIC';
 export const RESET_CONFIG = 'RESET_CONFIG';
+export const INIT_CONFIG = 'INIT_CONFIG';

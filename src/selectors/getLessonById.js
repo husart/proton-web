@@ -4,6 +4,5 @@ import getTopicById from './getTopicById';
 
 const allLessons = () => lessons;
 export default createSelector([allLessons, getTopicById], (lessons, topic) => {
-    debugger
-    return lessons.find(x=> x.lessonId === topic.id)
+    return lessons.find(x=> x.lessonId === topic.lessonId)
 })
