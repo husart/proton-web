@@ -15,9 +15,9 @@ const config = useSelector(state=> state.config)
         <ul className="headerLinks">
             
             
+            <li onClick={()=>{onClick(`/${config.type || ''}`)}}>Platforme</li>
             <li onClick={()=>{onClick('/contact')}}>Contact</li>
             <li onClick={()=>{onClick('/about')}}>Despre</li>
-            <li onClick={()=>{onClick(`/${config.type || ''}`)}}>Platforme</li>
         </ul>
         </div>
     )
