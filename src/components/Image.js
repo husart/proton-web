@@ -1,7 +1,8 @@
 import React from 'react'
+import "./Image.scss"
 
 export default function Image({input}) {
     return (
-        <img src={input} />
+        <img className="poza" src={input} />
     )
 }

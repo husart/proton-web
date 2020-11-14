@@ -47,7 +47,7 @@ const Lesson = () => {
   };
   
   const bullets = lessons.map((l,i) => (
-  <li key={i} className={`${l.view ? 'hasView': ''} ${index===i? 'current': ''}`}>{i}</li>
+  <li key={i} className={`${l.view ? 'hasView': ''} ${index===i? 'current': ''}`}>{i+1}</li>
   )) 
   const content = lessons[index].content.map((l, index) => (
     <span key={`${l.lessonId}-${index}`}>{generateContent(l)}</span>
@@ -59,13 +59,13 @@ const Lesson = () => {
             {bullets}
         </ul>
         <span className="arrows">
-            <img className={`preview ${0=== index ? 'disabled':''}`} src="/preview.svg" onClick={prevSlide}/>
-        <img className={`next ${lessons.length-1 === index? 'disabled':''}`} src="/next.svg" onClick={nextSlide} />
+            <img className="arrow" className={`preview ${0=== index ? 'disabled':''}`} src="/preview.svg" onClick={prevSlide}/>
+            <img className={`next ${lessons.length-1 === index? 'disabled':''}`} src="/next.svg" onClick={nextSlide} />
         </span>
         
       {/* <button onClick={prevSlide} disabled={0=== index}> {`<`} </button>
       <button onClick={nextSlide} disabled={lessons.length-1 === index}> {`>`} </button> */}
-      <div>{content}</div>
+      <div className="cont">{content}</div>
      
         
     </div>
