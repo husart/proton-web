@@ -11,6 +11,8 @@ import Topics from "./containers/Topics";
 import { INIT_CONFIG } from "./reducers/actions";
 import Apps from "./containers/Apps";
 import List from "./containers/List";
+import About from "./containers/About";
+import Contact from "./containers/Contact";
 function App() {
 
 
@@ -19,6 +21,8 @@ function App() {
       <Header></Header>
       <Router history={history}>
         <Route exact path="/" component={FirstPage} />
+        <Route path="/about" component={About} />
+        <Route path="/contact" component={Contact} />
         <Route path="/elev" component={List} />
         <Route exact path="/profesor" component={List} />
         <Route exact path="/profesor/:lessonId" component={Lesson} />
