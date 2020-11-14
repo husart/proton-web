@@ -1,0 +1,21 @@
+@import "../styles/variables.scss";
+
+.back {
+    display: inline-block;
+    margin: 0 auto;
+    margin: 0 1em 0 1em;
+    padding: 0.5em 0.25em 0.5em 0.25em ;
+    background-color: $primary-color;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 150px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: large;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.back:hover{
+    cursor: pointer;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5);
+}

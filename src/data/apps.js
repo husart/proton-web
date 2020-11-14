@@ -15,7 +15,7 @@ export default [
     },
     {
       type: 'elev',  
-      id: 3,
+      id: 2,
       topicTitle: 'Student',
       text: "Curs zoom st"
     },
