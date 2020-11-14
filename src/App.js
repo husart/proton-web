@@ -9,6 +9,8 @@ import store from "./reducers";
 import history from "./history";
 import Topics from "./containers/Topics";
 import { INIT_CONFIG } from "./reducers/actions";
+import Apps from "./containers/Apps";
+import List from "./containers/List";
 function App() {
 
 
@@ -17,9 +19,10 @@ function App() {
       <Header></Header>
       <Router history={history}>
         <Route exact path="/" component={FirstPage} />
-        <Route path="/elev" component={Topics} />
-        <Route exact path="/profesor" component={Topics} />
+        <Route path="/elev" component={List} />
+        <Route exact path="/profesor" component={List} />
         <Route exact path="/profesor/:lessonId" component={Lesson} />
+        <Route exact path="/elev/:lessonId" component={Lesson} />
       </Router>
     </Provider>
   );

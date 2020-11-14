@@ -1,6 +1,7 @@
 import React from 'react'
 import history from "../history";
 import { useDispatch } from 'react-redux'
+import { withRouter } from "react-router-dom";
 
 import { SELECT_TYPE } from '../reducers/actions';
 import './FirstPage.scss'
@@ -26,4 +27,4 @@ const FirstPage = ()=> {
     )
 };
 
-export default FirstPage;
+export default withRouter(FirstPage);
