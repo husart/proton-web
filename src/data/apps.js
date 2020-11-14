@@ -4,7 +4,7 @@ export default [
       id: 1,
       topicTitle: 'Zoom',
       text: "Curs Zoom",
-      logo:"https://mathdept.ucr.edu/sites/g/files/rcwecm1516/files/styles/form_preview/public/ZoomIcon.jpg?itok=2nr9g9lm"
+      logo:"/images/zoom.png"
     },
     {
       type: 'profesor',  
@@ -15,7 +15,7 @@ export default [
     },
     {
       type: 'elev',  
-      id: 3,
+      id: 2,
       topicTitle: 'Student',
       text: "Curs zoom st"
     },
