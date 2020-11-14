@@ -23,7 +23,7 @@ function App() {
         <Route exact path="/" component={FirstPage} />
         <Route path="/about" component={About} />
         <Route path="/contact" component={Contact} />
-        <Route exact path="/elev" component={List} />
+        <Route path="/elev" component={List} />
         <Route exact path="/profesor" component={List} />
         <Route exact path="/profesor/:lessonId" component={Lesson} />
         <Route exact path="/elev/:lessonId" component={Lesson} />

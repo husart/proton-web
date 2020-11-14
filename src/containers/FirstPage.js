@@ -19,11 +19,14 @@ const FirstPage = ()=> {
     };
 
     return (
-        
-        <div className="FirstPageContaier">
-            <button onClick={()=> onClick('/elev')}>Elev</button>
-            <button onClick={()=> onClick('/profesor')}>Profesor</button>
+        <div className="PaginaDeStart">
+            <img src="ed_home.png" alt="Imagine"></img>
+            <div className="FirstPageContaier">
+                <button onClick={()=> onClick('/elev')}>ELEV/PARINTE</button>
+                <button onClick={()=> onClick('/profesor')}>PROFESOR</button>
+            </div>
         </div>
+        
     )
 };
 
