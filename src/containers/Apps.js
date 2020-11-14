@@ -11,7 +11,7 @@ import getApps from "../selectors/getApps";
 const Apps = (props) => {
   const apps = useSelector(getApps);
   const dispatch = useDispatch();
-debugger
+
   const onClick = (appId) => {
     
     dispatch({

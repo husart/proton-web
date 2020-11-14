@@ -1,9 +1,9 @@
 import { CLEAR_APP,RESET_CONFIG, SELECT_TYPE, SELECT_TOPIC, SELECT_APP } from "./actions";
 import history from "../history";
 const initialConfig = {
-  selectedTopic: 1,
+  selectedTopic: null,
   selectedLesson: null,
-  type: "professor",
+  type: null,
   app: null,
 };
 

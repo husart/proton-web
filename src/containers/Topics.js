@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import { useSelector, useDispatch } from "react-redux";
 import "./Topics.scss";
 import history from "../history";
@@ -9,9 +9,13 @@ import { SELECT_TOPIC } from "../reducers/actions";
 
 const Topics = (props) => {
   const topics = useSelector(getTopics);
+  const config = useSelector(state=>state.config);
+  useEffect(() => {
+    if(!config.app);
+    history.push(`/${config.type || ''}`)
+  }, [])
   const { pathname } = props.history.location;
   const dispatch = useDispatch();
-debugger
   const onClick = (topicId) => {
     
     dispatch({
