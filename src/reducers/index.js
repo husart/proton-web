@@ -3,10 +3,12 @@ import devToolsEnhancer from "remote-redux-devtools";
 import lesson from "./lesson";
 import config from "./config";
 import topics from "./topics";
+import apps from './app';
 const reducers = combineReducers({
   lesson,
   config,
   topics,
+  apps
 });
 const store = createStore(
   reducers,

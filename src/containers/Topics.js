@@ -11,7 +11,7 @@ const Topics = (props) => {
   const topics = useSelector(getTopics);
   const { pathname } = props.history.location;
   const dispatch = useDispatch();
-
+debugger
   const onClick = (topicId) => {
     
     dispatch({
