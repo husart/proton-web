@@ -4,7 +4,7 @@ import "./Topics.scss";
 import history from "../history";
 import { withRouter } from "react-router-dom";
 import getTopics from "../selectors/getTopics";
-
+import './Apps.scss'
 import { SELECT_APP } from "../reducers/actions";
 import getApps from "../selectors/getApps";
 
@@ -31,7 +31,7 @@ const Apps = (props) => {
     >
       <img src={app.logo}></img>
       <h3>{app.topicTitle}</h3>
-      <p>{app.text}</p>
+      <p className="appText">{app.text}</p>
     </div>
   ));
   return <div className="card">

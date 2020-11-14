@@ -3,7 +3,7 @@ export default [
     appId: 1,  
     topicId: 1,
     lessonId: 1,
-    topicTitle: 'Curs Zoom',
+    topicTitle: 'Introducere',
     text: "Introducere in Zoom",
     logo:"https://mathdept.ucr.edu/sites/g/files/rcwecm1516/files/styles/form_preview/public/ZoomIcon.jpg?itok=2nr9g9lm"
   },
@@ -11,16 +11,32 @@ export default [
     appId: 1,  
     topicId: 2,
     lessonId: 2,
-    topicTitle: 'Curs Zoom',
-    text: "Cum intri într-o conferință Zoom",
+    topicTitle: 'Creare cont',
+    text: "Platformele Windows sau pe un Mac",
+    logo:"https://mathdept.ucr.edu/sites/g/files/rcwecm1516/files/styles/form_preview/public/ZoomIcon.jpg?itok=2nr9g9lm"
+  },
+  {
+    appId: 1,  
+    topicId: 4,
+    lessonId: 4,
+    topicTitle: 'Creare cont',
+    text: " Platformele Android sau pe un iPhone/iPad",
+    logo:"https://mathdept.ucr.edu/sites/g/files/rcwecm1516/files/styles/form_preview/public/ZoomIcon.jpg?itok=2nr9g9lm"
+  },
+  {
+    appId: 1,  
+    topicId: 5,
+    lessonId: 5,
+    topicTitle: 'Sedinta Zoom',
+    text: "Cum intri într-o conferință Zoom ",
     logo:"https://mathdept.ucr.edu/sites/g/files/rcwecm1516/files/styles/form_preview/public/ZoomIcon.jpg?itok=2nr9g9lm"
   },
   {
     appId: 2,  
-    topicId: 2,
-    lessonId: 2,
-    topicTitle: 'Facebook Intro',
-    text: "Curs Facebook",
-    logo:"https://i.pinimg.com/originals/b3/26/b5/b326b5f8d23cd1e0f18df4c9265416f7.png"
+    topicId: 3,
+    lessonId: 3,
+    topicTitle: 'Google Meet',
+    text: "Curs Meet",
+    logo:"/images/meet.png"
   },
 ];
